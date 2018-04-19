@@ -1,28 +1,153 @@
-.App {
-  text-align: center;
+.root, .main {
+	margin: auto;
+	padding-top: 20px;
+	font-size: 30px;
+	width: 50vw;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+body {
+	background-color: #698996;
+	font-family: 'segoe ui';
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.flex {
+	display: flex;
+	margin: auto;
+	padding: 10px 10px 10px 10px;
+	background-color: #97b1a6;
+	flex-direction: column;
+	border-radius: 5px;
+	min-height: 40px;
+	box-shadow: 0px 0px .5px;
 }
 
-.App-title {
-  font-size: 1.5em;
+.recipe {
+	display: flex;
+	flex-direction: column;
+	margin: 5px;
 }
 
-.App-intro {
-  font-size: large;
+.title {
+	border-radius: 5px;
+	padding: 2%;
+	box-shadow: 0px 0px .5px;
+	color: #355c61;
+	background-color: #c9c5ba;
+	cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.addnew {
+	margin-top: 10px;
+	display: inline-block;
+	border-radius: 5px;
+	border: 1px solid #355c61;
+	box-shadow: 0px 0px 1px #355c61;
+	padding: 0px 10px 5px 10px;
+	color: #c9c5ba;
+	flex-basis: fit-content;
+	background-color: #4b5169;
+	font-size: inherit;
+	cursor: pointer;
+	user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+}
+
+.addnew:active {
+	background-color: #3a405a;
+}
+
+.form {
+	position: absolute;
+	margin-top: -20px;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.recipeform {
+	display: flex;
+	width: 30vw;
+	font-size: 28px;
+	flex-direction: column;
+	background-color: #e6e4df;
+	border-radius: 5px;
+}
+
+.hide {
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.dim {
+	opacity: .3;
+	transition: opacity .5s;
+}
+
+.show {
+	z-index: 1;
+	margin-top: 0px;
+	opacity: 1;
+	visibility: visible;
+	transition: margin-top .8s,opacity .5s;
+}
+
+label {
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	margin-top: 10px;
+}
+
+input, textarea {
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	border-style: none;
+	box-shadow: 0px 0px 1px;
+}
+
+.flexbutton {
+	display: flex;
+	justify-content: center;
+}
+
+.formbutton {
+	margin: 5px;
+	font-size: 20px;
+	cursor: pointer;
+	user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+}
+
+.hr {
+	width: 98%;
+	text-align: center;
+}
+
+.test {
+	padding: 10px;
+	border-radius: 5px 5px 0px 0px;
+	background-color: #97b1a6;
+}
+
+.dropbox {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #e6e4df;
+	font-size: 26px;
+}
+
+.dropingredient {
+	align-self: flex-start;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 5px;
 }
